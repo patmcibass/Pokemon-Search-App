@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>Pok&eacute;mon Search App</h1>
+
+        <div class="container">
+
+            <form action="#">
+                <label for="search-input">Search for Pok&eacute;mon Name or ID:</label>
+                <div class="search-field">
+                    <input type="text" id="search-input" required>
+                    <button type="button" id="search-button">Search</button>
+                </div>
+            </form>
+
+            <div id="poke-screen">
+
+                <div class="poke-name-id together">
+                    <p id="pokemon-name"></p>
+                    <p id="pokemon-id"></p>
+                </div>
+
+                
+                <div class="size together">
+                    <p id="weight"></p>
+                    <p id="height"></p>
+                </div>
+                
+                <div id="img-container"></div>
+
+                <div id="types" class="together"></div>
+
+            </div>
+
+            <div id="stats">
+                
+                <div class="purple-grid">
+                    <p class="bold">Base</p>
+                </div>
+                <div class="purple-grid">
+                    <p class="bold">Stats</p>
+                </div>
+
+                <div class="purple-grid">
+                    <p>HP:</p>
+                </div>
+                <div class="purple-grid" id="hp"></div>
+
+                <div class="purple-grid">
+                    <p>Attack:</p>
+                </div>
+                <div class="purple-grid" id="attack"></div>
+
+                <div class="purple-grid">
+                    <p>Defense:</p>
+                </div>
+                <div class="purple-grid" id="defense"></div>
+
+                <div class="purple-grid">
+                    <p>Sp. Attack:</p>
+                </div>
+                <div class="purple-grid" id="special-attack"></div>
+
+                <div class="purple-grid">
+                    <p>Sp. Defense:</p>
+                </div>
+                <div class="purple-grid" id="special-defense"></div>
+
+                <div class="purple-grid">
+                    <p>Speed:</p>
+                </div>
+                <div class="purple-grid" id="speed"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
